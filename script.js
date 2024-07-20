@@ -30,6 +30,23 @@ function showComments() {
     comments[commentIndex - 1].style.display = "block";
     setTimeout(showComments, 3000); // Change image every 3 seconds
 }
+let bannerIndex = 0;
+showBanners();
+
+function showBanners() {
+    let i;
+    let banners = document.getElementsByClassName("myBanners");
+    for (i = 0; i < banners.length; i++) {
+        banners[i].style.display = "none";
+    }
+    bannerIndex++;
+    if (bannerIndex > banners.length) {
+        bannerIndex = 1;
+    }
+    banners[bannerIndex - 1].style.display = "block";
+    setTimeout(showBanners, 1000); // Change image every 3 seconds
+}
+
 
 
 
