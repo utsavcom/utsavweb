@@ -341,7 +341,8 @@ footer .address {
     background: linear-gradient(to right, rgba(135, 206, 250, 1), rgba(70, 130, 180, 1));
     color: #2e2e2e; /* A dark gray color for the text */
    height: fit-content;
-   width:99%
+    width: 100%;
+   max-width:700px
 
 }
 
